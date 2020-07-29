@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        >
+    </ImageView>
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/option0"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="option1"
+        android:layout_below="@+id/image"
+        android:onClick="checkAnswer"
+        android:tag="0"
+        />
+    <Button
+        android:id="@+id/option1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="option2"
+        android:layout_below="@+id/option0"
+        android:onClick="checkAnswer"
+        android:tag="1"
+        />
+    <Button
+        android:id="@+id/option2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/option1"
+        android:text="option3"
+        android:onClick="checkAnswer"
+        android:tag="2"
+        />
+    <Button
+        android:id="@+id/option3"
+        android:text="option4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/option2"
+        android:onClick="checkAnswer"
+        android:tag="3"
+        />
+
+
+
+</RelativeLayout>
